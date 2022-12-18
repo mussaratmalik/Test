@@ -9,7 +9,7 @@ function PetFooter(){
                 <div className="footer-navbar-item">
                     <span className="footer-nav-a">Follow Us</span> 
                     <div className="footer-social-div">
-                        <a className="footer-nav-a" href="footer.js"><img className="footer-social-icons" src="facebook.png" alt="Facebbok"></img></a> 
+                        <a className="footer-nav-a" href="footer.js"><img className="footer-social-icons" src="facebook.png" alt="Facebook"></img></a> 
                         <a className="footer-nav-a" href="footer.js"><img className="footer-social-icons"  src="instagram.png" alt="Instagram"></img></a> 
                         <a className="footer-nav-a" href="footer.js"><img className="footer-social-icons" src="youtube.png" alt="YouTube"></img></a> 
                     </div>

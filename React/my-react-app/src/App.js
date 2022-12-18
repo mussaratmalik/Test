@@ -1,36 +1,16 @@
 //import logo from './logo.svg';
 import './App.css';
-// import PetHeader from './petsworld/header.js';
-// import PetFooter from './petsworld/footer.js';
-// import SearchPage from './petsworld/searchpage.js';
-// import Home from './petsworld/home.js';
-// import { BrowserRouter, Route } from 'react-router-dom';
-import Test from './test.js';
-//import Newpz from './new.js';
-//import Inc from './counter.js';
-//import Dec from './Dec.js';
-//import MultiplyE from './array.js';
-// import Data from './Data';
-//import Student from './Student';
-// import Result from './Result.js';
-// import ProductCart from './ProductsCart';
-// import MyComponent from './weather.js';
+import PetHeader from './petsworld/header.js';
+import PetFooter from './petsworld/footer.js';
+import SearchPage from './petsworld/searchpage.js';
 function App() {
   return (
     <div className="App mainDiv">
-
-<Test/>
-      {/* <PetHeader/>
+      <PetHeader/>
       <SearchPage/>
-      <PetFooter/>  */}
+      <PetFooter/> 
 
-      {/* <BrowserRouter>
-        <Home/>
-        <Route exact path='petToys' component="petToys"></Route>
-        <Route exact path='petFood' component="petFood"></Route>
-        <Route exact path='petAccessories' component="petAccessories"></Route>
-        <Route exact path='vet' component="vet"></Route>
-      </BrowserRouter> */}
+      
       {/* <header className="App-header"> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <p>
