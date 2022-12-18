@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/%7BTest%7D/static/css/main.2126e5eb.css",
-    "main.js": "/%7BTest%7D/static/js/main.e9e843b8.js",
-    "static/js/787.bc7d429a.chunk.js": "/%7BTest%7D/static/js/787.bc7d429a.chunk.js",
-    "static/media/bg.webp": "/%7BTest%7D/static/media/bg.fe3a9ae79eb5f61e3192.webp",
-    "index.html": "/%7BTest%7D/index.html",
-    "main.2126e5eb.css.map": "/%7BTest%7D/static/css/main.2126e5eb.css.map",
-    "main.e9e843b8.js.map": "/%7BTest%7D/static/js/main.e9e843b8.js.map",
-    "787.bc7d429a.chunk.js.map": "/%7BTest%7D/static/js/787.bc7d429a.chunk.js.map"
+    "main.css": "/%7BPetWorld%7D/static/css/main.ff5b2db8.css",
+    "main.js": "/%7BPetWorld%7D/static/js/main.78d01a26.js",
+    "static/js/787.bc7d429a.chunk.js": "/%7BPetWorld%7D/static/js/787.bc7d429a.chunk.js",
+    "static/media/bg.webp": "/%7BPetWorld%7D/static/media/bg.fe3a9ae79eb5f61e3192.webp",
+    "index.html": "/%7BPetWorld%7D/index.html",
+    "main.ff5b2db8.css.map": "/%7BPetWorld%7D/static/css/main.ff5b2db8.css.map",
+    "main.78d01a26.js.map": "/%7BPetWorld%7D/static/js/main.78d01a26.js.map",
+    "787.bc7d429a.chunk.js.map": "/%7BPetWorld%7D/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2126e5eb.css",
-    "static/js/main.e9e843b8.js"
+    "static/css/main.ff5b2db8.css",
+    "static/js/main.78d01a26.js"
   ]
 }
