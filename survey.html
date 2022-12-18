@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <div>
+        <table>
+            <tr>Let us know how can improve freeCodeCamp</tr>
+            <br><br>
+            <tr>
+                <td>Name:</td>
+                <td><label for="name1"></label><input type="text" id="name1" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><label for="mail"></label><input type="email" id="mail" placeholder="Enter Your Email"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><label for="age"></label><input type="number" id="age" placeholder="Enter Your Age"></td>
+            </tr>
+            <tr>
+                <td>Which option best describe your current role?</td>
+                <td><label for="role"></label>
+                    <select name="role" >
+                    <option name="1" selected>Student</option>
+                    <option name="1" >Web Developer</option>
+                    <option name="1" >Lecturer</option>
+                    </select></td>   
+            </tr>
+            <tr>
+                <td>How likely is that you would recommend freeCodeCamp to a friend?</td>
+                <td>
+                   <input type="radio" id="def" checked>
+                   <label for="def">Definitely</label><br><br>
+                   <input type="radio" id="maybe" >
+                   <label for="maybe">May be</label><br><br>
+                   <input type="radio" id="notsure" >
+                   <label for="notsure">Not Sure</label><br><br>
+                </td>   
+            </tr>
+            <tr>
+                <td>What do you like the most in FCC?</td>
+                <td><label for="like"></label>
+                    <select name="like" >
+                    <option name="1" selected>Select an Option</option>
+                    <option name="1" >MEAN/MERN</option>
+                    <option name="1" >Flutter</option>
+                    </select></td>   
+            </tr>
+            <tr>
+                <td>Things that should be improved in the future (Check all that apply):</td>
+                <td>
+                   <input type="checkbox" id="fend" >
+                   <label for="fend">Front-End Projects</label><br><br>
+                   <input type="checkbox" id="bend" >
+                   <label for="bend">Back-End PRojects</label><br><br>
+                   <input type="checkbox" id="datav" >
+                   <label for="datav">Data Visualization</label><br><br>
+                </td>   
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

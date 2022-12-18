@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        value= new Array(10);
+        for(var i=0; i<10; i++)
+        {
+            value[i]=prompt("Enter 10 Values:");
+        }
+        for(var i=0; i<10; i++)
+        {
+            document.write("<br>",value[i]);
+        }
+        var sum=calculatesum(value);
+        document.write("<br>Sum of 10 values is:",sum);
+        function calculatesum(value)
+        {
+            var total=0;
+            for(var i=0; i<10; i++)
+        {
+            total=total+ parseInt(value[i]);
+        }
+            return total;
+        }
+    </script>
+</body>
+</html>

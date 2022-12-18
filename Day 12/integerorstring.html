@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" >
+        <input type="text" id="data" placeholder="Enter a value...">
+        <input type="button" value="ADD" onclick="addvalue()">
+    </form>
+    <div id="displaydiv"></div>
+    <script>
+        var data = new Array();
+        var char = new String();
+        var count=0;
+        function addvalue(){
+            var x=documentString.getElementById("data").value;
+            if(!isNaN(x)){  
+                sum(x);
+            }
+                alert("dfds");
+                concatenation(x);
+            }
+        }
+        function sum(num)
+        {
+            data.push(num);
+            for(var i=1; i<data.length; i++)
+            {
+                numpre=data[i-1];
+                num=parseInt(num)+parseInt(numpre);
+            }
+            document.getElementById('displaydiv').innerHTML=num;
+
+        }
+        function concatenation(num)
+        {
+            alert(num);
+            var arr=(char.length)-1;
+            var total=char[arr]+num; 
+            
+            char.push(total);
+            alert(total);
+            document.getElementById('displaydiv').innerHTML=num;
+            
+        }
+        
+    </script>
+</body>
+</html>

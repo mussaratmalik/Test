@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Expense{
+            constructor(i,u,f,g){
+                this.income=i;
+                this.units=u;
+                this.fruits=f;
+                this.grocessory=g;
+            }
+        }
+        class homeExpenses extends Expense{
+            constructor(i,u,f,g){
+                super(i,u,f,g);
+                // document.write("Electricity units:"+this.units+"<br>Per Unit Cost"+this.cost+"Grocessory Cost:"+this.grocessory);
+            }
+            ElectricityBill(){
+                this.cost=this.units*100;
+                this.puc=25;
+                document.write("Electricity units:"+this.units+"<br>Per Unit Cost:"+this.puc+"<br>Total Electricity bill:"+this.cost);
+            }
+            RationBill(){
+                this.total=parseInt(this.grocessory) + parseInt(this.fruits);
+                document.write("<br>Total Ration bill:"+this.total);
+            }
+            Savings(){
+                // alert("Savings");
+                this.s=parseInt(this.income)-(parseInt(this.cost)+parseInt(this.total));
+                document.write("<br>Savings are:"+this.s);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        HomeObj= new homeExpenses(50000,250,1000,2000);
+        HomeObj.ElectricityBill();
+        HomeObj.RationBill();
+        HomeObj.Savings();
+    </script>
+</body>
+</html>

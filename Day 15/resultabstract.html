@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ResultCal(total){
+            
+            this.total=total;
+            this.gradcalc=function(){
+            let sub1=50;
+            let sub2=60;
+            let sub3=95;
+            let sub4=87;
+            let sub5=88;
+                this.avg=(parseInt(sub1) +parseInt(sub2)+parseInt(sub3)+parseInt(sub4)+parseInt(sub5))/this.total*100;
+                //this.avg=(sub1+sub2+sub3+sub4+sub5)/this.total*100;
+                document.write(`Percentage Marks are:${this.avg}`);
+                assigngrad(this.avg);
+
+                
+
+            }
+            var assigngrad=function(thisavg){
+                if(thisavg>80 && thisavg<=100){
+                    var grade="A";
+                }
+                else if(thisavg>70 && thisavg<=80){
+                    var grade="B";
+                }
+                else if(thisavg>60 && thisavg<=70){
+                    var grade="C";
+                }
+                else if(thisavg>50 && thisavg<=60){
+                    var grade="D";
+                }
+                else if(thisavg>0 && thisavg<=50){
+                    var grade="F";
+                }
+                let test = `Your Grade is:${grade}`;
+                //document.write(`test
+                //Your Grade is:${grade}`);
+                document.write(test);
+            }
+        }
+    </script>
+</head>
+<body>
+   <script>
+    var r=new ResultCal(500);
+    r.gradcalc();
+   </script> 
+</body>
+</html>

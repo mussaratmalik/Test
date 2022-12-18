@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class employee{
+            constructor(id,name,salary,address)
+            {
+                this.i=id;
+                this.n=name;
+                this.s=salary;
+                this.a=address;
+               
+            }
+        }
+
+        class Manager extends employee{
+            constructor(id,name,salary,address){
+                super(id,name,salary,address);
+                document.write(this.i+"  "+this.n+"   "+this.s+"  "+this.a+"<br>");
+                
+            }
+            netsalary(){
+                alert("ijfdgj");
+                this.sale=this.s;
+                this.bonus=(10/100)*this.sale;
+                this.ns=this.bonus+this.sale;
+                document.write("Bonus is:"+this.bonus+"<br>Net Salary:"+ this.ns);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        
+        var objM=new Manager(1,"Mussarat",50000,"Wah");
+        objM.netsalary();
+    </script>
+</body>
+</html>

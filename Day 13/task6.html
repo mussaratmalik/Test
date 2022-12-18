@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showcon(){
+            var x=document.getElementById("country").value;
+            if(x=="pak")
+            { 
+                c.result.value= "Islamabad";
+            }
+            else if(x=="china")
+            {
+                c.result.value= "Shinghai";
+            }
+            else if(x=="iran")
+            {
+                c.result.value= "Tehran";
+            }
+            else if(x=="usa")
+            {
+                c.result.value= "NYC";
+            }
+            else if(x=="egypt")
+            {
+                c.result.value= "Cairo";
+            }
+            else if(x=="ireland")
+            {
+                c.result.value= "Dublin";
+            }
+            else if(x=="qatar")
+            {
+                c.result.value= "Doha";
+            }
+            else if(x=="canada")
+            {
+                c.result.value= "Ottawa";
+            }
+            else if(x=="italy")
+            {
+                c.result.value= "Rome";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="c">
+        <label for="country">Country:</label>
+        <select id="country" onchange="showcon()">
+            <option name="con" id="" value="">Select a country</option>
+            <option name="con" id="pak" value="pak">Pakistan</option>
+            <option name="con" id="china" value="china">China</option>
+            <option name="con" id="iran" value="iran">Iran</option>
+            <option name="con" id="ireland" value="ireland">Ireland</option>
+            <option name="con" id="qatar" value="qatar">Qatar</option>
+            <option name="con" id="usa" value="usa">USA</option>
+            <option name="con" id="egypt" value="egypt">Egypt</option>
+            <option name="con" id="canada" value="canada">Canada</option>
+            <option name="con" id="italy" value="italy">Italy</option>
+        </select>
+        <label for="result">Capital:</label>
+        <input type="text" name="result" id="result">
+    </form>
+    
+</body>
+</html>

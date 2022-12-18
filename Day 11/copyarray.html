@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("Enter size of an array:");
+        array1= new Array(num);
+        array2= new Array(num);
+        for(var i=0; i<num; i++)
+        {
+            array1[i]=prompt("Enter Values:");
+        }
+        for(var i=0; i<num; i++)
+        {
+            array2[i]=array1[i];
+        }
+        document.write("<br> Elements of array 1:");
+        for(var i=0; i<num; i++)
+        {
+            document.write("    ", array1[i]);
+        }
+        document.write("<br> Elements of array 2:");
+
+        for(var i=0; i<num; i++)
+        {
+            document.write("    ", array2[i]);
+        }
+
+
+
+    </script>
+</body>
+</html>

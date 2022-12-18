@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=new Array();
+        var count=0;
+        let numarray=()=>{
+            
+            //let arr=new Array();
+            var data=parseInt(document.getElementById("dataarr").value);
+            if(!isNaN(data)){
+                arr.push(data);
+                count=count+1;
+                document.getElementById('result').innerHTML=count+"number of values added" + arr;     
+            }        
+        }
+        let sortarray=()=>{
+                arr.sort(function(a, b){return a-b});                
+                document.getElementById('sortp').innerHTML="Sorted Array is:" + arr;
+            }
+        let sortarray1=()=>{
+            for(var i=0;i<arr.length;i++)
+            {
+                if(arr[i]>arr[i+1]){
+                    temp=arr[i];
+                    arr[i]=arr[i+1];
+                    arr[i+1]=temp;
+                    i=i-1;
+                }
+            }
+            document.getElementById('sortp').innerHTML="Sorted Array is:" + arr;
+        }
+    </script>
+</head>
+<body>
+    <label for="dataarr">Enter values in an array</label>
+    <input type="text" id="dataarr" placeholder="Enter Numbers....">
+    <input type="button" onclick="numarray()" value="Add">
+    <input type="button" onclick="sortarray()" value="Sort">
+    <input type="button" onclick="sortarray1()" value="sorting through Loop">
+    <p id="result"></p>
+    <p id="sortp"></p>
+</body>
+</html>

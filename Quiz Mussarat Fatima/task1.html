@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Payment{
+            constructor(pay){
+                this.payment=pay;
+            }
+        PaymentDetails() {
+                // var words=toWords(this.payment);
+                document.write("<br>Parent Class Payment in Numbers:", this.payment);
+        }
+        }
+        class CashPayment extends Payment{
+            constructor(pay){
+                super(pay);
+                 this.payc=6000;
+            }
+            PaymentDetails(){
+                super.PaymentDetails();
+                document.write("<br>Child Class Cash Payment in Numbers:", this.payc);
+            }
+        }
+        class CardPayment extends Payment{
+            constructor(pay){
+                super(pay);
+                this.paycd=7000;
+            }
+            PaymentDetails(){
+                super.PaymentDetails();
+                document.write("<br>Child Class Card Payment in Numbers:", this.paycd);
+            }
+        }
+        function CreditDetails(n,e,cc){
+            this.name=n;
+            this.expiryDate=e;
+            this.CreditCardNum=cc;
+            // var x=this.paycd;
+            // alert(x);
+            PaymentDetails(this.name,this.expiryDate,this.CreditCardNum);
+        }
+            var PaymentDetails=function(n,e,cc){
+            document.write("<br>Card Name:",n,"<br>Card Expiry Date:",e,"<br>Card Card Number:",cc);
+        }
+    
+        
+           
+        
+        
+    </script>
+</head>
+
+<body>
+    <script>
+        var PayObj=new CashPayment(5000);
+        PayObj.PaymentDetails();
+        var CardObj=new CardPayment(5000);
+        CardObj.PaymentDetails();
+        var CreditObj= new CreditDetails("Mussarat", 2025, 52482348203);
+    </script>
+</body>
+</html>

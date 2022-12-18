@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Salary=prompt("Enter Your Salary:");
+        var c=calculateinc(Salary);
+        alert("Your Net Salary is:" + c);
+        function calculateinc(ci)
+        {
+
+                if(ci>=20000 && ci<50000)
+                {
+                    var inc=(15/100)*ci;
+                }
+                else if(ci>=50000 && ci<80000)
+                {
+                    var inc=(10/100)*ci;
+                }
+                else if(ci>=80000)
+                {
+                    var inc=(5/100)*ci;
+                }
+            var total=parseInt(inc) + parseInt(ci);
+            return total;
+        }
+    </script>
+</body>
+</html>

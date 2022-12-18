@@ -1,0 +1,6 @@
+.nav-1{
+    background-color: rebeccapurple ;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse.navbar-toggle:hover {
+    background-color: transparent;
+}

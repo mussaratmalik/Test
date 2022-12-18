@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class car{
+            constructor(model,color,price){
+                this.model1=model;
+                this.color1=color;
+                this.price1=price;
+            }
+            getvalues(){
+                document.write(this.model1+"  "+this.color1+"  "+this.price1);
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var carobj=new car(2020,"black",500000);
+        carobj.getvalues();
+
+    </script>
+</body>
+</html>

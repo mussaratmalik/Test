@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       let greetings=()=>{
+        var x=document.getElementById("greets").value;
+        if(x==1)
+        {
+            document.getElementById("gt").innerHTML="Good Morning";
+        }
+        else if(x==2)
+        {
+            document.getElementById("gt").innerHTML="Good Afternoon";
+        }
+        else if(x==3)
+        {
+            document.getElementById("gt").innerHTML="Good Night";
+        }
+        
+       }
+       let greetingbtn=()=>{
+        document.getElementById("gt").innerHTML="Good Morning";
+       }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="greetingbtn()" value="Greet Yourself">
+    <label for="greets">Greetings</label>
+    <select id="greets" onchange="greetings()">
+        <option id="" value="">Select an Option</option>
+        <option id="1" value="1">1</option>
+        <option id="2" value="2">2</option>
+        <option id="3" value="3">3</option>
+    </select>
+    <p id="gt"></p>
+</body>
+</html>

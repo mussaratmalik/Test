@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class sum2{
+            constructor(n1,n2,n3){
+                this.n1=n1;
+                this.n2=n2;
+                this.n3=n3; 
+            }
+            add(){
+                alert("Three Variable Sum");
+                this.sum=parseInt(this.n1)+parseInt(this.n2)+parseInt(this.n3);
+                document.write("Sum of Three Numbers is:" + this.sum);
+                alert(this.sum);
+            }
+        }
+        class sum3 extends sum2{
+            
+            add(){
+                
+                super.add();
+                this.csum=this.n1+this.n2;
+                document.write("<br>Sum of Two Numbers is:" + this.csum);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var sum1=new sum2(5,3,2);
+        var sumObj=new sum3(5,3,8);
+        sumObj.add();
+    </script>
+</body>
+</html>

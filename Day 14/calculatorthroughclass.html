@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class ccalculator{
+            addition(n11,n22){
+                
+                this.n1=n11;
+                this.n2=n22;
+                document.getElementById("results").innerHTML= "Addition is:"+ (parseInt(this.n1)+parseInt(this.n2));
+            }
+            subtraction(n11,n22){
+                this.n1=n11;
+                this.n2=n22;
+                document.getElementById("resultsub").innerHTML= "Subtraction is:"+(parseInt(this.n1)-parseInt(this.n2));
+            }
+            multiplication(n11,n22){
+                this.n1=n11;
+                this.n2=n22;
+                document.getElementById("resultm").innerHTML= "Multiplication is:"+(parseInt(this.n1)*parseInt(this.n2));
+            }
+            division(n11,n22){
+                this.n1=n11;
+                this.n2=n22;
+                document.getElementById("resultd").innerHTML= "Division is:"+(parseInt(this.n1)/parseInt(this.n2));
+            }
+           
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1" placeholder="Enter a number....">
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2" placeholder="Enter a number....">
+        <input type="button" onclick="resultcalculator()" value="Calculator">
+    </div>
+    <p id="results"></p>
+    <p id="resultsub"></p>
+    <p id="resultm"></p>
+    <p id="resultd"></p>
+
+    <script>
+        function resultcalculator(){
+            
+            var n11=parseInt(document.getElementById("num1").value);
+            var n22=parseInt(document.getElementById("num2").value);
+            var cobj=new ccalculator();
+            cobj.addition(n11,n22);
+            cobj.subtraction(n11,n22);
+            cobj.multiplication(n11,n22);
+            cobj.division(n11,n22);
+            
+
+        }
+    </script>
+</body>
+</html>

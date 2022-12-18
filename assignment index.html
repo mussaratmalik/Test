@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="style sheet" type="text/css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="testpage.html">Test Page</a></li>
+        </ul>
+
+    </div>
+    <div class="block1">
+        <h1 class="block1h">BootCamp MERN first class</h1>
+        <p class="block1p" style="color: red; font-size: 15px;background-color: aqua; text-align: center;"><b>Lorem</b> ipsum, dolor sit <strong>consectetur</strong> consectetur <em>adipisicing</em> elit. <br>  officiis
+            distinctio <i>corrupti</i> nihil consequuntur eum, <small>optio excepturi</small>  ratione praesentium harum ! Quo doloribus eveniet perspiciatis, debitis inventore pariatur exercitationem dolores?</p>
+    </div>
+    <div class="block2">
+        <h1>Special Characters using ordered list</h1>
+        <ol>
+            <li>&forall;</li>
+            <li>&exist;</li>
+            <li>&empty;</li>
+            <li>&alpha;</li>
+            <li>&beta;</li>
+            <li>&gamma;</li>
+        </ol>
+    </div>
+    <!-- Div for ordered listing  -->
+    <div class="block3">
+        <h1>Special Characters using unordered list</h1>
+        <ul> 
+            <li>&forall;</li>
+            <li>&exist;</li>
+            <li>&empty;</li>
+            <li>&alpha;</li>
+            <li>&beta;</li>
+            <li>&gamma;</li>
+        </ul>
+    </div>
+    <!-- div for unordered listing  -->
+    <div class="block4" id="image">
+        <h2>Our Iamge</h2>
+        <img src="images/1.jpg" alt="Refresh your page">
+    </div>
+    <div class="block5" id="audio">
+        <h2>Our Audio</h2>
+        <audio src="https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav" controls></audio>
+        <audio src="audio/1.wav" controls ></audio>
+        <audio src="audio/2.mp3" controls></audio>
+    </div>
+    <div class="block6" id="Video">
+        <h2>Our Video</h2>
+        <video src="video/1.mp4" height="200" width="500" controls></video>
+        <br><iframe width="500" height="200" src="https://www.youtube.com/embed/znxDNKP_-pE" title="[FREE] ACOUSTIC Guitar Type Beat "Heat" (Sad Rap x Country Instrumental 2020)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    </div>
+    <table border="1" style="margin:auto;border-color: aqua;border-collapse: collapse;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <th>50</th>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <th>45</th>
+        </tr>
+    </table>    
+    <div class="block7">
+        <h1> Our Form</h1>
+        <form  name="form1" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="First Name..."><br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Last Name..."><br><br>
+            <label for="hidden">Hidden Field</label>
+            <input type="hidden" name="hidden" ><br><br>
+            <label for="country">Country</label>
+            <select  name="country">
+                <option selected>Your Country</option>
+                <option >Africa</option>
+                <option >Bangladesh</option>
+                <option >Brazil</option>
+                <option >Pakistan</option>
+                <option >USA</option>
+                <option >UK</option>
+            </select><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Your Password..." ><br><br>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" ><br><br>
+            <label for="number">Contact Number</label>
+            <input type="number" name="number" placeholder="Enter Your Number..."><br><br>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" placeholder="Email Address..." ><br><br>
+            <label for="file1">Upload</label>
+            <input type="file" name="file1" ><br><br>
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback" rows="5" cols="30" placeholder="Write Your Views..."></textarea><br><br>
+            <label for="gen1">Female</label>
+            <input type="radio" name="gen1" checked>
+            <label for="gen1">Male</label>
+            <input type="radio" name="gen1" value="Male" ><br><br>
+            <h3>Subjects</h3>
+            <input type="checkbox" name="html"><label for="html">HTML</label><br><br>
+            <input type="checkbox" name="css"><label for="css">CSS</label><br><br>
+            <input type="checkbox" name="js"><label for="js">JavaScript</label><br><br>
+        <input type="submit">
+        <input type="reset">
+
+        
+        </form>
+
+    </div>
+    <div class="links" >
+        <h2>Links</h2>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="mailto:xyz@gmail.com" >Send Email</a>
+    </div>
+    <!-- There are comments  -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class shape{
+            constructor(side){
+                this.side=side;
+                
+            }
+        }
+        class triangle extends shape{
+            constructor(side){
+                super(side);
+            }
+            area(){
+                //alert("df");
+                // super(side);
+                this.a1=(1/2)* parseInt(this.side);
+                document.write("Area is of triangle is:" + this.a1);
+
+            }
+        }
+        class rectangle extends shape{
+            constructor(side){
+                super(side);
+            }
+            area(){
+                // super(side);
+                this.a2=parseInt(this.side)* parseInt(this.side);
+                document.write("<br>Area is of triangle is:" + this.a2);
+
+            }
+        }
+        class circle extends shape{
+            constructor(side){
+                super(side);
+            }
+            area(){
+                // super(side);
+                var pi=3.14;
+                this.a3=pi* parseFloat(this.side);
+                document.write("<br>Area is of triangle is:" + this.a3);
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // var trishape=new shape(5);        
+        var triObj=new triangle(5);
+        var rectObj=new rectangle(5);
+        var cirObj=new circle(5);
+        triObj.area();
+        rectObj.area();
+        cirObj.area();
+
+    </script>
+</body>
+</html>

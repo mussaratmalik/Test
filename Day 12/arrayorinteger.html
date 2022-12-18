@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" >
+        <input type="text" id="data" placeholder="Enter a number...">
+        <input type="button" value="ADD" onclick="addvalue()">
+        <input type="button" value="Display" onclick="display()">
+    </form>
+    <div id="displaydiv"></div>
+    <script>
+        var data = new Array();
+        var count=0;
+        function addvalue(){
+            var x=document.getElementById("data").value;
+            var valuex=parseInt(x);
+
+            if(!isNaN(valuex)){  
+                data.push(x);
+                count=count+1;
+                document.getElementById('displaydiv').innerHTML=count+"number of values added";
+                document.getElementById("data").value("");
+
+            }
+        }
+        function display(){
+        document.getElementById('displaydiv').innerHTML=data; // Display the elements of the array
+        }
+    </script>
+</body>
+</html>

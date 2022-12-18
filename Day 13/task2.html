@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            num1=document.getElementById("n1").value;
+            num2=document.getElementById("n2").value;
+            t3=document.getElementById("result");
+            num3=parseInt(num1)+parseInt(num2);
+            alert(num3);
+            t3.value=num3;
+        }
+    </script>
+</head>
+<body>
+    <form name="dataform">
+        <label for="n1">Enter Number</label>
+        <input type="text" name="n1" id="n1" placeholder="Enter Only Number">
+        <label for="n2">Enter Another Number</label>
+        <input type="text" name="n2" id="n2" placeholder="Enter Only Number">
+        <input type="button" onclick="add()" value="Add">
+        
+    </form>
+    <p id="result"></p>
+</body>
+</html>

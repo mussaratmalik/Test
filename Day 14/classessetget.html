@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class employee{
+            setvalue(id,name,address,salary){
+                this.eid=id;
+                this.ename=name;
+                this.eaddress=address;
+                this.esalary=salary;
+            }
+            getvalues(){
+                document.getElementById("resultemp").innerHTML=this.eid+"  "+this.ename+"  "+this.eaddress+"  "+this.esalary;
+                // document.write(this.eid+"  "+this.ename+"  "+this.eaddress+"  "+this.esalary);
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        function showresult(){
+            var id=document.getElementById("id").value;
+            var name=document.getElementById("nam").value;
+            var address=document.getElementById("ad").value;
+            var salary=document.getElementById("sal").value;
+            var empobj=new employee;
+            empobj.setvalue(id,name,address,salary);
+            empobj.getvalues();
+
+        }
+
+        // var empobj=new employee;
+        // empobj.setvalue(1,"Mussarat","Wah",70000);
+        
+        
+
+    </script>
+    <div>
+        <label for="id">Employee ID</label>
+        <input type="text" id="id">
+        <label for="nam">Employee Name</label>
+        <input type="text" id="nam">
+        <label for="ad">Employee Address</label>
+        <input type="text" id="ad">
+        <label for="sal">Employee Salary</label>
+        <input type="text" id="sal">
+        <input type="button" onclick="showresult()" value="Display">
+
+    </div>
+    <p id="resultemp"></p>
+</body>
+</html>

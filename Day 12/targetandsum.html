@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" >
+        <input type="text" id="data" placeholder="Enter a value...">
+        <input type="button" value="ADD" onclick="addvalue()">
+        <input type="button" value="Display" onclick="display()">
+        <input type="text" id="tg" placeholder="Target Number">
+        <input type="button" value="Target" onclick="target1()">
+    </form>
+    <div id="dtarget"></div>
+    <script>
+        var data = new Array();
+        var count=0;
+        function addvalue(){
+            var x=document.getElementById("data").value;
+            var valuex=parseInt(x);
+            if(!isNaN(valuex)){  
+                data.push(x);
+                count=count+1;
+                document.getElementById('dtarget').innerHTML=count+"number of values added";
+            }
+        }
+        function display(){
+        document.getElementById("dtarget").innerHTML=data; // Display the elements of the array
+        }
+        function target1(){
+            var tr=document.getElementById("tg").value;
+            
+            var valuetr=parseInt(tr);
+            
+            for(var i=0;i<data.length; i++)
+            {
+                var frst=data[i];
+                for(var j=i+1; j<data.length; j++)
+                {
+                    var final=parseInt(frst) + parseInt(data[j]);
+                    if (final==valuetr)
+                    {
+                        document.write(frst);
+                        document.write(data[j]);
+                        
+                        document.getElementById('dtarget').innerHTML=frst; 
+                        document.getElementById('dtarget').innerHTML=data[j]; 
+
+                    }
+                }
+              
+            }
+        }
+    </script>
+</body>
+</html>

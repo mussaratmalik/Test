@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sales Order Form</h1>
+    <form name="form1" method="post">
+        Buyer Name: <input name="input1" type="text">
+        <br>
+        <br>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>Rs. 250</td>
+                <td><input name="input2" type="text"></td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>Rs. 100</td>
+                <td><input name="input3" type="text"></td>
+            </tr>
+            <tr>
+                <td>LCD</td>
+                <td>Rs. 8000</td>
+                <td><input name="input4" type="text"></td>
+            </tr>
+            <tr>
+                <td>1 GB RAM</td>
+                <td>Rs. 2500</td>
+                <td><input name="input5" type="text"></td>
+            </tr>
+        </table>
+        Payment Method: <input  type="radio" name="payment" value="VISA" checked><label>VISA</label>
+        <input  type="radio" name="payment" value="Master Card"><label>Master Card</label><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>

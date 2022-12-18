@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter Value of a for Quadratic Equation:");
+        var b=prompt("Enter Value of b for Quadratic Equation:");
+        var c=prompt("Enter Value of c for Quadratic Equation:");
+        sq= (b*b)-4*a*c;
+        if(sq==0){
+                var x= -b/(2*a);
+                document.write("<br>Value of a:",a, "<br>Value of b:",b, "<br>Value of c:",c, "<br> Solution of Quadratic equation is:", x);
+        }
+        else if(sq>0)
+        {
+            var x1= -b+Math.sqrt(sq)/(2*a);
+            var x2= -b-Math.sqrt(sq)/(2*a);
+            document.write("<br>Value of a:",a, "<br>Value of b:",b, "<br>Value of c:",c, "<br> Two Solution Exists.<br> Result of Quadratic Equation Solution1:  ", x1, "<br> Result of Quadratic Equation Solution2:  ", x2);
+        }
+        else if(sq<0)
+        {
+            document.write("<br> No Real Solution!");
+        }
+    </script>
+</body>
+</html>

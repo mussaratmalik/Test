@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <h1>Quadratic Equation Conversion Through formula</h1>
+        <form target="_blank" method="post" action="#">
+            <label for="valuea">Enter Value of a:</label>
+            <input type="text" id="valuea" name="valuea"><br><br>
+            <label for="valueb">Enter Value of b:</label>
+            <input type="text" id="valueb" name="valueb"><br><br>
+            <label for="valuec">Enter Value of c:</label>
+            <input type="text" id="valuec" name="valuec"><br><br>  
+            <input type="button" onclick="convert()" value="Quadratic Value">
+            <input type="reset">
+        </form>
+    </div>
+    <div class="box2">
+        <h1>Sort Three Numbers</h1>
+        <form target="_blank" method="post" action="#">
+            <label for="value1">Enter 1st Value</label>
+            <input type="text" id="value1" name="value1"><br><br>
+            <label for="value2">Enter 2nd Value</label>
+            <input type="text" id="value2" name="value2"><br><br>
+            <label for="value3">Enter 3rd Value:</label>
+            <input type="text" id="value3" name="value3"><br><br>
+            
+            <input type="button" onclick="sort()" value="Sort">
+            <input type="reset">
+        </form>
+    </div>
+    <div class="box3">
+        <h1>Scholarship Criteria</h1>
+        <form target="_blank" method="post" action="#">
+            <label for="marks">Enter your marks:</label>
+            <input type="text" id="marks" name="marks"><br><br>
+            
+            <input type="button" onclick="checkscholarship()" value="Check">
+            <input type="reset">
+        </form>
+    </div>
+    <div class="box4">
+        <h1>Number 1-20</h1>
+        <form target="_blank" method="post" action="#">
+            <label for="num">Enter a number within range (1-20):</label>
+            <input type="text" id="num" name="num"><br><br>
+            
+            <input type="button" onclick="displaynum()" value="Display">
+            <input type="reset">
+        </form>
+    </div>
+    <div class="box5">
+        <h1>Temperature Conversion</h1>
+        <form target="_blank" method="post" action="#">
+            <label for="cel">Enter Temperature in celsius:</label>
+            <input type="text" id="cel" name="cel"><br><br>
+            <label for="faren">Enter Temperature in Farenhite:</label>
+            <input type="text" id="faren" name="faren"><br><br>
+            <input type="button" onclick="converttemp()" value="Display">
+            <input type="reset">
+        </form>
+    </div>
+    <script>
+        function convert()
+        {
+            var valuea=document.getElementById("valuea");
+            var a=valuea.value; 
+            var valueb=document.getElementById("valueb");
+            var b=valueb.value; 
+            var valuec=document.getElementById("valuec");
+            var c=valuec.value; 
+
+            var sq= (b*b)-4*a*c;
+            if(a!="" && b!="" && c!="")
+            {
+                if(sq==0){
+                    var x= -b/(2*a);
+                    alert(" Solution of Quadratic equation is:" + x);
+                }
+                else if(sq>0)
+                {
+                    var x1= parseInt(-b+Math.sqrt(sq)/(2*a));
+                    var x2= parseInt(-b-Math.sqrt(sq)/(2*a));
+                    alert("Two Solution Exists.Result of Quadratic Equation Solution1:  " + x1 + "Result of Quadratic Equation Solution2:  " + x2);
+                }
+                else if(sq<0)
+                {
+                    alert("No Real Solution!");
+                }
+            }
+        }
+
+
+        function sort()
+        {
+            var value1=document.getElementById("value1");
+            var aa=value1.value; 
+            var value2=document.getElementById("value2");
+            var bb=value2.value; 
+            var value3=document.getElementById("value3");
+            var cc=value3.value; 
+            if(aa!="" && bb!="" && cc!="")
+            {
+                if(aa>bb && aa>cc){
+                if(bb>cc)
+                {
+                    document.write("<br>",aa, "<br>",bb, "<br>",cc);
+                }
+                else{
+                    document.write("<br>",aa, "<br>",cc, "<br>",bb);
+                }
+                }
+                else if(bb>aa && bb>cc){
+                if(aa>cc)
+                {
+                    document.write("<br>",bb, "<br>",aa, "<br>",cc);
+                }
+                else{
+                    document.write("<br>",bb, "<br>",cc, "<br>",aa);
+                }
+                }
+                else if(cc>aa && cc>bb)
+                {
+                if(aa>bb)
+                {
+                    document.write("<br>",cc, "<br>",aa, "<br>",bb);
+                }
+                else{
+                    document.write("<br>",cc, "<br>",bb, "<br>",aa);
+                }
+                }
+            }
+        }
+        function checkscholarship(){
+            var m=document.getElementById("marks");
+            var marks=m.value; 
+            var result=resultscholarship(marks);
+            alert("You will get scholarship of Rs.:" + result);
+        }
+        function resultscholarship(rmarks)
+        {
+            if(rmarks!="")
+            {
+                if(rmarks>=700)
+                {
+                    scholarship=3000;
+                }
+                else if(rmarks>=650 && rmarks<700)
+                {
+                    scholarship=2500;
+                }
+                else if(rmarks>=600 && rmarks<650)
+                {
+                    scholarship=2000;
+                }
+            }
+            return scholarship;
+        }
+
+        function displaynum(){
+
+            var num1=document.getElementById("num");
+            var n=num1.value;
+                switch(n){
+                case '1':
+                        var number="One";
+                        break;
+                case '2':
+                        var number="Two";
+                        break;
+                case '3':
+                        var number="Three";
+                        break;
+                case '4':
+                        var number="Four";
+                        break;
+                case '5':
+                        var number="Five";
+                        break;
+                case '6':
+                        var number="Six";
+                        break;
+                case '7':
+                        var number="Seven";
+                        break;
+                case '8':
+                        var number="Eight";
+                        break;
+                case '9':
+                        var number="Nine";
+                        break;
+                case '10':
+                        var number="Ten";
+                        break;
+                case '11':
+                        var number="Eleven";
+                        break;
+                case '12':
+                        var number="Twelve";
+                        break;
+                case '13':
+                        var number="Thirteen";
+                        break;
+                case '14':
+                        var number="Fourteen";
+                        break;
+                case '15':
+                        var number="Fifteen";
+                        break;
+                case '16':
+                        var number="Sixteen";
+                        break;
+                case '17':
+                        var number="Seventeen";
+                        break;
+                case '18':
+                        var number="Eighteen";
+                        break;
+                case '19':
+                        var number="Ninteen";
+                        break;
+                case '20':
+                        var  number="Twenty";
+                        break;
+                default:
+                        document.write("<br>You entered invalid Value");
+            }
+            alert(n + "   " + number);
+        }
+        function converttemp()
+        {
+            var c=document.getElementById("cel");
+            var cel= c.value;
+            var f=document.getElementById("faren");
+            var faren=f.value;
+            if(cel!="")
+            {
+                var f1=((9/5) * cel)+32;
+                f.value=f1;
+
+            }
+            else if( faren!="")
+            {
+                var c1=((5/9) * faren)-32;
+                c.value=c1;
+            }
+        }
+    </script>
+</body>
+</html>

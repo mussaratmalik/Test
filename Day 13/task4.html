@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bookprice()
+        {
+            
+            
+        }
+        function disct()
+        {
+            var value1=document.getElementById("n1").value;
+            var value2=document.getElementById("n2").value;
+            var pr=5000;
+            var price1=parseInt(pr)*(20/100);
+            if(value1!="" && value2!="")
+            {
+                
+                dataform.t1.value= price1;
+            }     
+            
+        }
+        function nodisct(){
+            var value1=document.getElementById("n1").value;
+            var value2=document.getElementById("n2").value;
+            var pr=5000;
+            
+            if(value1!="" && value2!="")
+            {
+                
+                dataform.t1.value= pr;
+            }   
+        }
+        // function displaypr()
+        // {
+        //     alert("pr");
+            
+            
+        //     if(value1!="" && value2!="")
+        //     {
+                
+        //         dataform.t1.value= price1;
+        //     }
+        //     else{
+                
+        //     }
+        // }
+        
+    </script>
+</head>
+<body>
+    <form name="dataform">
+        <label for="n1">Name </label>
+        <input type="text" name="n1" id="n1" placeholder="Enter your Name">
+        <label for="n2">Book Name:</label>
+        <input type="text" name="n2" id="n2" placeholder="Book you want to purchase" onchange="bookprice()">
+        <p>Are you a student to get 20% Discount</p>
+        <label for="yes">Yes</label> 
+        <input type="radio" name="discount" id="yes" onclick="disct()">
+        <label for="No">No</label> 
+        <input type="radio" name="discount" id="no" onclick="nodisct()">
+        <input type="button" name="btn" id="btn" value="Calculate" onclick="displaypr()">
+        <input type="text" id="t1"> 
+    </form>
+</body>
+</html>

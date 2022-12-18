@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            value1=document.getElementById("n1").value;
+            value2=document.getElementById("n2").value;
+            result = parseInt(value1)+parseInt(value2);
+        }
+        function sub()
+        {
+            value1=document.getElementById("n1").value;
+            value2=document.getElementById("n2").value;
+            result = parseInt(value1)-parseInt(value2);
+        }
+        function mul()
+        {
+            value1=document.getElementById("n1").value;
+            value2=document.getElementById("n2").value;
+            result = parseInt(value1)*parseInt(value2);
+        }
+        function div()
+        {
+            value1=document.getElementById("n1").value;
+            value2=document.getElementById("n2").value;
+            result = parseInt(value1)/parseInt(value2);
+        }
+        function displayr()
+        {
+            alert(result);
+            var s=document.getElementById("show");
+            s.value=parseInt(result) ;
+
+        }
+
+    </script>
+</head>
+<body>
+    <form name="dataform">
+        <label for="n1">Number 1:</label>
+        <input type="text" name="n1" id="n1" placeholder="Enter a number">
+        <label for="n2">Number 2:</label>
+        <input type="text" name="n2" id="n2" placeholder="Enter a number">
+        <p>Select the type of Calculator</p>
+        <label for="c1">Add</label>
+        <input type="checkbox" name="select" id="c1" onclick="add()">
+        <label for="c2">Subtract</label>
+        <input type="checkbox" name="select" id="c2" onclick="sub()">
+        <label for="c3">Multiply</label>
+        <input type="checkbox" name="select" id="c3" onclick="mul()">
+        <label for="c4">Divide</label>
+        <input type="checkbox" name="select" id="c4" onclick="div()">
+        <input type="button" onclick="displayr()" value="Calculate">
+    </form>
+    <div id="show"></div>
+</body>
+</html>

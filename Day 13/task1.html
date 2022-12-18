@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function con(){
+            text1=document.getElementById("t1").value;
+            text2=document.getElementById("t2").value;
+            t3=document.getElementById("t3");
+            text3=text1+text2;
+            t3.value=text3;
+            document.getElementById("pp").innerHTML=text3;
+        }
+    </script>
+</head>
+<body>
+    <form name="dataform">
+        <label for="t1">Enter text</label>
+        <input type="text" name="t1" id="t1" onchange="con()">
+        <label for="t2">Enter Another Text</label>
+        <input type="text" name="t2" id="t2" onchange="con()">
+        <label for="t3">Concatenated Strings:</label>
+        <input type="text" name="t3" id="t3">
+    </form>
+    <div id="pp"></div>
+</body>
+</html>

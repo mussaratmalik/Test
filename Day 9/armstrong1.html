@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        for(var i=100; i<=999; i++)
+        {
+            var quotient=parseInt(i/10);
+            var c=parseInt(i%10);
+            var b=parseInt(quotient%10);
+            var a=parseInt(quotient/10);
+            var arm = a*a*a + b*b*b + c*c*c;
+            if(arm==i)
+        {
+            document.write("<br>Armstrong Number is:",i);
+        }
+
+        }
+    </script>
+</body>
+</html>

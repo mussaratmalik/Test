@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        factarray= new Array(5);
+        for(var i=0; i<5; i++)
+        {
+            factarray[i]=prompt("Enter a Value:");
+        }
+        for(var i=0; i<5; i++)
+        {
+            document.write("   ", factarray[i]);
+        }
+        
+
+        for(var i=0; i<5; i++)
+        {
+            n=factarray[i];
+            factorial(n);
+        }
+        function factorial(n)
+        {
+            var fact=1;
+            for(var i=1; i<=n;i++)
+            {
+                fact=fact*i;
+            }
+            document.write("<br> Factorial of  ",n,"  is:",fact);
+        }
+    </script>
+</body>
+</html>

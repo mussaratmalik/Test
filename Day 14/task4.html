@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=new Array();
+        var count=0;
+        var total=0;
+        let numarray=()=>{
+            
+            //let arr=new Array();
+            var data=parseInt(document.getElementById("dataarr").value);
+            if(!isNaN(data)){
+                arr.push(data);
+                count=count+1;
+                document.getElementById('result').innerHTML=count+"number of values added and values are: " + arr;     
+            }        
+        }
+        let arrayAverage=()=>{
+            var v=length.arr;
+            for(var i=0;i<length.arr; i++)
+            {
+                total=total+arr[i];
+                document.getElementById('result').innerHTML=" values are: " + arr; 
+            }
+            var avg=parseInt(total/v) ;
+            document.getElementById('updated').innerHTML=" Average is : " + avg;
+            }
+    </script>
+</head>
+<body>
+    <label for="dataarr">Enter values in an array</label>
+    <input type="text" id="dataarr" placeholder="Enter Numbers....">
+    <input type="button" onclick="numarray()" value="Add">
+    <input type="button" onclick="arrayAverage()" value="Calculate Average">
+    <p id="result"></p>
+    <p id="updated"></p>  
+</body>
+</html>

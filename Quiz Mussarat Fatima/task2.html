@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Game{
+        info(){
+            var s1="I love games and sports";
+            console.log(s1);
+        }
+        
+
+    }
+    class Cricket extends Game{
+        info(){
+            var s2="I love Cricket";
+            console.log(s2);
+        }
+        
+        
+    }
+    class Football extends Game{
+        info(){
+            var s3="I love Football";
+            console.log(s3);
+        }
+        
+        
+    }
+</script>
+<body>
+    <script>
+        var g=new Game();
+        g.info();
+        var c=new Cricket();
+        c.info();
+        var f=new Football();
+        f.info();
+    </script>
+    
+</body>
+</html>

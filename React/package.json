@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "react-router-dom": "^6.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

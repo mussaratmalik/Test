@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" >
+        <input type="text" id="data" placeholder="Enter a number...">
+        <input type="button" value="ADD" onclick="addvalue()">
+        <input type="button" value="Display" onclick="display()">
+        <input type="button" value="Check Duplicate" onclick="checkdup()">
+        <input type="button" value="Delete Duplicate" onclick="deletedup()">
+        <input type="reset">
+    </form>
+    <div id="displaydiv"></div>
+    <div id="displayduplicate"></div>
+    <div id="displaydeleted"></div>
+    <script>
+        var data = new Array();
+        var count=0;
+        function addvalue(){
+            var x=document.getElementById("data").value;
+            var valuex=parseInt(x);
+
+            if(!isNaN(valuex)){  
+                data.push(x);
+                count=count+1;
+                document.getElementById('displaydiv').innerHTML=count+"number of values added";
+                document.getElementById("data").value("");
+
+            }
+        }
+        function display(){
+        document.getElementById('displaydiv').innerHTML=data; // Display the elements of the array
+        }
+        function checkdup(){
+            var next=1;
+            var count=0;
+            
+            for(var i=0;i<data.length; i++)
+            {
+                for(var j=i; j<data.length; j++)
+                {
+                if (data[i] == data[j])
+                    count++;
+                if (next<count)
+                {
+                  next=count; 
+                  item = data[i];
+                }
+                }
+                count=0;
+            }
+            document.getElementById('displayduplicate').innerHTML=next;
+        
+        }
+        function deletedup(){
+            for(var i=0; i<data.length; i++)
+            {
+                var duplicate =data[i];
+                for(var j=i+1; j<data.length; j++)
+                {
+                    if(duplicate==data[j])
+                    {
+                        data.splice(j,1);
+                        document.getElementById('displaydeleted').innerHTML=duplicate; 
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
