@@ -1,10 +1,10 @@
 //import logo from './logo.svg';
 import './App.css';
-import PetHeader from './petsworld/header.js';
-import PetFooter from './petsworld/footer.js';
-import SearchPage from './petsworld/searchpage.js';
-import Home from './petsworld/home.js';
-import { BrowserRouter, Route } from 'react-router-dom';
+// import PetHeader from './petsworld/header.js';
+// import PetFooter from './petsworld/footer.js';
+// import SearchPage from './petsworld/searchpage.js';
+// import Home from './petsworld/home.js';
+// import { BrowserRouter, Route } from 'react-router-dom';
 import Test from './test.js';
 //import Newpz from './new.js';
 //import Inc from './counter.js';
